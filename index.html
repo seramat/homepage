@@ -12,6 +12,7 @@
 	<link rel="manifest" href="/manifest.json">
 	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#618F9E">
 	<meta name="theme-color" content="#618F9E">
+	<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
 	<style>
 @font-face {
   font-family: 'univers-web';
@@ -524,7 +525,10 @@ a:hover {
 				</a>
 			</li>
 		</ul>
-		<b id="about5" style="visibility:hidden">about-me:~ mayuzumi$ <span class="typed-cursor">_</span></b>
+		<b id="about5" style="visibility:hidden">about-me:~ mayuzumi$ </b><d id="element5" style="visibility:visible"></d><span id="cursor5" class="typed-cursor" style="visibility:hidden">_</span>
+		<a href="https://github.com/SIDmao/homepage" id="forklink"></a>
+		<br />
+		<ul><c id="OK"></c></ul>
 	</div>
 	<div class="bottombar">
 	</div>
@@ -572,11 +576,25 @@ showText('cursor4',4500);
 hideText('cursor4',5550);
 showText('educ',5600);
 showText('about5',5700);
+showText('cursor5',5700);
 printText('cat <f style="font-weight:bold;">INFORMATION</f>','element1',1000);
 printText('cat <f style="font-weight:bold;">EXPERIENCE</f>','element2',2200);
 printText('cat <f style="font-weight:bold;">PROJECT</f>','element3',3400);
 printText('cat <f style="font-weight:bold;">EDUCATION</f>','element4',4600);
+printText('<f style="font-weight:bold;">Press "ENTER" button to Fork me on GitHub</f>','element5',5800);
 }
+</script>
+<script>
+setTimeout(function(){ 
+document.onkeydown = function(e){
+var ev=document.all?window.event:e;
+if(ev.keyCode==13){
+document.getElementById('cursor5').style.visibility='hidden';
+document.getElementById("OK").innerHTML = "OK! Now you can fork this theme and modify it!";
+setTimeout(function(){open($("#forklink").attr("href"))},1000);
+} 
+} 
+},6800); 
 </script>				
 </body>
 </html>
