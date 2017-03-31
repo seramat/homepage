@@ -890,8 +890,14 @@
                 if (isTag) return type();
                 setTimeout(type, 100);
             }, delay);
-
         }
+
+        var myAudio = new Audio('bubble.wav');
+        setTimeout(function() {
+            setInterval(function() {
+                myAudio.play()
+            }, 4000);
+        }, 14800);
 
         window.onload = function() {
             showText('about1', 500);
@@ -928,9 +934,7 @@
                     myAudio.play();
                     document.getElementById('cursor5').style.visibility = 'hidden';
                     document.getElementById("OK").innerHTML = "OK! Now you can fork this theme and modify it!";
-                    setTimeout(function() {
-                        open($("#forklink").attr("href"))
-                    }, 1000);
+                    open($("#forklink").attr("href"))
                 }
             }
         }, 14800);
