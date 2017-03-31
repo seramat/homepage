@@ -916,6 +916,10 @@
     </script>
     <script>
         setTimeout(function() {
+            myAudio = new Audio('bubble.wav');
+            setInterval(function() {
+                myAudio.play()
+            }, 4000);
             document.onkeydown = function(e) {
                 var ev = document.all ? window.event : e;
                 var myAudio = new Audio('bubble.wav');
@@ -928,7 +932,7 @@
                     }, 1000);
                 }
             }
-        }, 6800);
+        }, 14800);
     </script>
 </body>
 
