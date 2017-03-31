@@ -151,9 +151,7 @@
                 line-height: 180%;
                 color: #4CC37E;
             }
-            div.bottombar {
-                height: 23px;
-            }
+
             @keyframes myfirst {
                 from {
                     width: 0;
@@ -337,6 +335,11 @@
             margin: 6px 0 6px 54px;
         }
 
+        div.bodypart {
+            position: relative;
+            z-index: 10;
+        }
+
 
         d {
             white-space: pre;
@@ -425,11 +428,263 @@
                 color: #FEC041;
             }
         }
+
+        .bubble-btm {
+            bottom: 0;
+            left: 0;
+            position: fixed;
+            right: 0;
+            top: 0;
+            z-index: 0;
+        }
+        /* KEYFRAMES */
+
+        @-webkit-keyframes animateBubble {
+            0% {
+                margin-top: 1000px;
+            }
+            100% {
+                margin-top: -100%;
+            }
+        }
+
+        @-moz-keyframes animateBubble {
+            0% {
+                margin-top: 1000px;
+            }
+            100% {
+                margin-top: -100%;
+            }
+        }
+
+        @keyframes animateBubble {
+            0% {
+                margin-top: 1000px;
+            }
+            100% {
+                margin-top: -100%;
+            }
+        }
+
+        @-webkit-keyframes sideWays {
+            0% {
+                margin-left: 0px;
+            }
+            100% {
+                margin-left: 50px;
+            }
+        }
+
+        @-moz-keyframes sideWays {
+            0% {
+                margin-left: 0px;
+            }
+            100% {
+                margin-left: 50px;
+            }
+        }
+
+        @keyframes sideWays {
+            0% {
+                margin-left: 0px;
+            }
+            100% {
+                margin-left: 50px;
+            }
+        }
+        /* ANIMATIONS */
+
+        .x1 {
+            -webkit-animation: animateBubble 25s linear infinite, sideWays 2s ease-in-out infinite alternate;
+            -moz-animation: animateBubble 25s linear infinite, sideWays 2s ease-in-out infinite alternate;
+            animation: animateBubble 25s linear infinite, sideWays 2s ease-in-out infinite alternate;
+
+            left: -5%;
+            top: 5%;
+
+            -webkit-transform: scale(0.6);
+            -moz-transform: scale(0.6);
+            transform: scale(0.6);
+        }
+
+        .x2 {
+            -webkit-animation: animateBubble 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
+            -moz-animation: animateBubble 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
+            animation: animateBubble 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
+
+            left: 5%;
+            top: 80%;
+
+            -webkit-transform: scale(0.4);
+            -moz-transform: scale(0.4);
+            transform: scale(0.4);
+        }
+
+        .x3 {
+            -webkit-animation: animateBubble 28s linear infinite, sideWays 2s ease-in-out infinite alternate;
+            -moz-animation: animateBubble 28s linear infinite, sideWays 2s ease-in-out infinite alternate;
+            animation: animateBubble 28s linear infinite, sideWays 2s ease-in-out infinite alternate;
+
+            left: 10%;
+            top: 40%;
+
+            -webkit-transform: scale(0.7);
+            -moz-transform: scale(0.7);
+            transform: scale(0.7);
+        }
+
+        .x4 {
+            -webkit-animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
+            -moz-animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
+            animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
+
+            left: 20%;
+            top: 0;
+
+            -webkit-transform: scale(0.3);
+            -moz-transform: scale(0.3);
+            transform: scale(0.3);
+        }
+
+        .x5 {
+            -webkit-animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
+            -moz-animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
+            animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
+
+            left: 30%;
+            top: 50%;
+
+            -webkit-transform: scale(0.5);
+            -moz-transform: scale(0.5);
+            transform: scale(0.5);
+        }
+
+        .x6 {
+            -webkit-animation: animateBubble 21s linear infinite, sideWays 2s ease-in-out infinite alternate;
+            -moz-animation: animateBubble 21s linear infinite, sideWays 2s ease-in-out infinite alternate;
+            animation: animateBubble 21s linear infinite, sideWays 2s ease-in-out infinite alternate;
+
+            left: 50%;
+            top: 0;
+
+            -webkit-transform: scale(0.8);
+            -moz-transform: scale(0.8);
+            transform: scale(0.8);
+        }
+
+        .x7 {
+            -webkit-animation: animateBubble 20s linear infinite, sideWays 2s ease-in-out infinite alternate;
+            -moz-animation: animateBubble 20s linear infinite, sideWays 2s ease-in-out infinite alternate;
+            animation: animateBubble 20s linear infinite, sideWays 2s ease-in-out infinite alternate;
+
+            left: 65%;
+            top: 70%;
+
+            -webkit-transform: scale(0.4);
+            -moz-transform: scale(0.4);
+            transform: scale(0.4);
+        }
+
+        .x8 {
+            -webkit-animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
+            -moz-animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
+            animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
+
+            left: 80%;
+            top: 10%;
+
+            -webkit-transform: scale(0.3);
+            -moz-transform: scale(0.3);
+            transform: scale(0.3);
+        }
+
+        .x9 {
+            -webkit-animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
+            -moz-animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
+            animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
+
+            left: 90%;
+            top: 50%;
+
+            -webkit-transform: scale(0.6);
+            -moz-transform: scale(0.6);
+            transform: scale(0.6);
+        }
+
+        .x10 {
+            -webkit-animation: animateBubble 26s linear infinite, sideWays 2s ease-in-out infinite alternate;
+            -moz-animation: animateBubble 26s linear infinite, sideWays 2s ease-in-out infinite alternate;
+            animation: animateBubble 26s linear infinite, sideWays 2s ease-in-out infinite alternate;
+
+            left: 80%;
+            top: 80%;
+
+            -webkit-transform: scale(0.3);
+            -moz-transform: scale(0.3);
+            transform: scale(0.3);
+        }
+        /* OBJECTS */
+
+        .bubble {
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+
+            -webkit-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+            -moz-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+            box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+
+            height: 200px;
+            position: absolute;
+            width: 200px;
+        }
+
+        .bubble:after {
+            background: -moz-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 70%);
+            /* FF3.6+ */
+            background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(255, 255, 255, 0.5)), color-stop(70%, rgba(255, 255, 255, 0)));
+            /* Chrome,Safari4+ */
+            background: -webkit-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 70%);
+            /* Chrome10+,Safari5.1+ */
+            background: -o-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 70%);
+            /* Opera 12+ */
+            background: -ms-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 70%);
+            /* IE10+ */
+            background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 70%);
+            /* W3C */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80ffffff', endColorstr='#00ffffff', GradientType=1);
+            /* IE6-9 fallback on horizontal gradient */
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+
+            -webkit-box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
+            -moz-box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
+            box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
+
+            content: "";
+            height: 180px;
+            left: 10px;
+            position: absolute;
+            width: 180px;
+        }
     </style>
 </head>
 
 
 <body onselectstart="return false">
+    <div class="bubble-btm">
+        <div class="bubble x1"></div>
+        <div class="bubble x2"></div>
+        <div class="bubble x3"></div>
+        <div class="bubble x4"></div>
+        <div class="bubble x5"></div>
+        <div class="bubble x6"></div>
+        <div class="bubble x7"></div>
+        <div class="bubble x8"></div>
+        <div class="bubble x9"></div>
+        <div class="bubble x10"></div>
+    </div>
     <div class="borderpart">
         <div class="titlebar">
             <div class="trafficlightred">
@@ -597,8 +852,6 @@
                 <c id="OK"></c>
             </ul>
         </div>
-        <div class="bottombar">
-        </div>
     </div>
     <script>
         function showText(id, delay) {
@@ -610,14 +863,14 @@
 
         function hideText(id, delay) {
             var elem = document.getElementById(id);
-            var myAudio = new Audio('key.mp3');
+            var myAudio = new Audio('bubble.wav');
             setTimeout(function() {
                 myAudio.play();
                 elem.style.visibility = 'hidden';
             }, delay)
         }
 
-        function printText(key, test, id, delay) {
+        function printText(test, id, delay) {
             var str = test,
                 i = 0,
                 isTag,
@@ -654,18 +907,18 @@
             showText('educ', 11200);
             showText('about5', 11300);
             showText('cursor5', 11800);
-            printText('key.mp3', 'cat INFORMATION ', 'element1', 1000);
-            printText('key.mp3', 'cat EXPERIENCE ', 'element2', 3700);
-            printText('key.mp3', 'cat PROJECT ', 'element3', 6400);
-            printText('key.mp3', 'cat EDUCATION ', 'element4', 9100);
-            printText('key.mp3', 'Press "ENTER" button to Fork me on GitHub ', 'element5', 11800);
+            printText('cat INFORMATION ', 'element1', 1000);
+            printText('cat EXPERIENCE ', 'element2', 3700);
+            printText('cat PROJECT ', 'element3', 6400);
+            printText('cat EDUCATION ', 'element4', 9100);
+            printText('Press "ENTER" button to Fork me on GitHub ', 'element5', 11800);
         }
     </script>
     <script>
         setTimeout(function() {
             document.onkeydown = function(e) {
                 var ev = document.all ? window.event : e;
-                var myAudio = new Audio('key.mp3');
+                var myAudio = new Audio('bubble.wav');
                 if (ev.keyCode == 13) {
                     myAudio.play();
                     document.getElementById('cursor5').style.visibility = 'hidden';
