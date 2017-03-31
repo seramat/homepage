@@ -34,6 +34,10 @@
             body {
                 background: #383052;
             }
+            div.bodypart {
+                position: relative;
+                z-index: 999;
+            }
             div.titlebar {
                 display: none;
             }
@@ -42,6 +46,7 @@
                 padding-left: 5px;
                 padding-right: 5px;
                 overflow: scroll;
+                z-index: 999;
             }
             c {
                 white-space: pre;
@@ -55,22 +60,16 @@
                 font: normal 16px univers-web;
                 color: #d8d8d8;
             }
-            div.bodypart {
-                padding-top: 10px;
-                padding-bottom: 10px;
-                height: 100%;
-                width: 100%;
-                overflow: scroll;
-                font: normal 16px univers-web;
-                line-height: 180%;
-                color: #4CC37E;
-            }
         }
 
         @media only screen and (min-width: 800px) and (max-width: 1100px) {
             html,
             body {
                 background: #383052;
+            }
+            div.bodypart {
+                position: relative;
+                z-index: 999;
             }
             div.titlebar {
                 display: none;
@@ -80,6 +79,7 @@
                 padding-left: 10%;
                 padding-right: 5%;
                 overflow: scroll;
+                z-index: 999;
             }
             c {
                 white-space: pre;
@@ -99,22 +99,12 @@
                 color: #d8d8d8;
                 padding-bottom: 10px;
             }
-            div.bodypart {
-                padding-top: 10px;
-                padding-bottom: 10px;
-                height: 100%;
-                width: 100%;
-                overflow: scroll;
-                font: normal 16px univers-web;
-                line-height: 180%;
-                color: #4CC37E;
-            }
         }
 
         @media only screen and (min-width: 1100px) and (max-width: 1500px) {
             html,
             body {
-                background-color: #E0DACF;
+                background: #E0DACF;
             }
             div.borderpart {
                 width: 80%;
@@ -203,7 +193,7 @@
         @media only screen and (min-width: 1501px) {
             html,
             body {
-                background-color: #E0DACF;
+                background: #E0DACF;
             }
             div.borderpart {
                 width: 60%;
@@ -337,7 +327,14 @@
 
         div.bodypart {
             position: relative;
-            z-index: 10;
+            z-index: 999;
+        }
+
+        ul {
+            position: relative;
+            padding-bottom: 10px;
+            padding-top: 10px;
+            z-index: 999;
         }
 
 
@@ -427,11 +424,6 @@
             50% {
                 color: #FEC041;
             }
-        }
-
-        ul {
-            padding-bottom: 10px;
-            padding-top: 10px;
         }
 
         .bubble-btm {
@@ -859,6 +851,7 @@
         </div>
     </div>
     <script>
+    var myAudio = new Audio('bubble.mp3');
         function showText(id, delay) {
             var elem = document.getElementById(id);
             setTimeout(function() {
@@ -868,7 +861,6 @@
 
         function hideText(id, delay) {
             var elem = document.getElementById(id);
-            var myAudio = new Audio('bubble.wav');
             setTimeout(function() {
                 myAudio.play();
                 elem.style.visibility = 'hidden';
@@ -892,11 +884,10 @@
             }, delay);
         }
 
-        var myAudio = new Audio('bubble.wav');
         setTimeout(function() {
             setInterval(function() {
                 myAudio.play()
-            }, 4000);
+            }, 6000);
         }, 14800);
 
         window.onload = function() {
@@ -924,12 +915,10 @@
             printText('cat EDUCATION ', 'element4', 9100);
             printText('Press "ENTER" button to Fork me on GitHub ', 'element5', 11800);
         }
-    </script>
-    <script>
+
         setTimeout(function() {
             document.onkeydown = function(e) {
                 var ev = document.all ? window.event : e;
-                var myAudio = new Audio('bubble.wav');
                 if (ev.keyCode == 13) {
                     myAudio.play();
                     document.getElementById('cursor5').style.visibility = 'hidden';
