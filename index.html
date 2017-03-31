@@ -1,600 +1,682 @@
-<html lang="en"><head>
+<html lang="en">
+
+<head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<meta name="apple-mobile-web-app-capable" content="yes" />
-	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
-	<meta name="format-detection" content="telephone=no, email=no" />
-	<title>まゆずみ - 我见青山多妩媚，料青山见我应如是。</title>	
-	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-	<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
-	<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
-	<link rel="manifest" href="/manifest.json">
-	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#618F9E">
-	<meta name="theme-color" content="#618F9E">
-	<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
-	<style>
-@font-face {
-  font-family: 'univers-web';
-  src: url('UniversNextPro-Light.eot'); /* IE9 Compat Modes */
-  src: url('UniversNextPro-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('UniversNextPro-Light.woff') format('woff'), /* Modern Browsers */
-       url('UniversNextPro-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('UniversNextPro-Light.svg#60168d388d72f31b2b732f8e5dc0540d') format('svg'); /* Legacy iOS */
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no, email=no" />
+    <title>まゆずみ - 我见青山多妩媚，料青山见我应如是。</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#618F9E">
+    <meta name="theme-color" content="#618F9E">
+    <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+    <style>
+        @font-face {
+            font-family: 'univers-web';
+            src: url('UniversNextPro-Light.eot');
+            /* IE9 Compat Modes */
+            src: url('UniversNextPro-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('UniversNextPro-Light.woff') format('woff'), /* Modern Browsers */
+            url('UniversNextPro-Light.ttf') format('truetype'), /* Safari, Android, iOS */
+            url('UniversNextPro-Light.svg#60168d388d72f31b2b732f8e5dc0540d') format('svg');
+            /* Legacy iOS */
+            font-style: normal;
+            font-weight: 200;
+        }
 
-  font-style:   normal;
-  font-weight:  200;
-}
+        @media only screen and (max-width: 800px) {
+            html,
+            body {
+                background: #383052;
+            }
+            div.titlebar {
+                display: none;
+            }
+            ul {
+                list-style: none;
+                padding-left: 5px;
+                padding-right: 5px;
+                overflow: scroll;
+            }
+            c {
+                white-space: pre;
+                font: normal 16px univers-web;
+                color: #4CC37E;
+                display: inline-block;
+                width: 90px;
+            }
+            b {
+                padding-left: 5px;
+                font: normal 16px univers-web;
+                color: #d8d8d8;
+            }
+            div.bodypart {
+                padding-top: 10px;
+                padding-bottom: 10px;
+                height: 100%;
+                width: 100%;
+                overflow: scroll;
+                font: normal 16px univers-web;
+                line-height: 180%;
+                color: #4CC37E;
+            }
+        }
 
-@media only screen and (max-width: 800px) {
-	html,body {
-	background: #383052;
-	}
-	div.titlebar {
-	display:none;
-	}
-	ul {
-	list-style: none;
-	padding-left: 5px;
-	padding-right:5px;
-	overflow: scroll;
-	}
-	c {
-	white-space: pre;
-	font: normal 16px univers-web;
-	color:#4CC37E;
-	display: inline-block;
-	width: 90px;
-	}
-	b {
-	padding-left:5px;
-	font: normal 16px univers-web;
-	color:#d8d8d8;
-	}
-	div.bodypart {
-	padding-top:10px;
-	padding-bottom:10px;
-	height:100%;
-	width:100%;
-	overflow: scroll;
-	font: normal 16px univers-web;
-	line-height:180%;
-	color:#4CC37E;
-	}
-}
+        @media only screen and (min-width: 800px) and (max-width: 1100px) {
+            html,
+            body {
+                background: #383052;
+            }
+            div.titlebar {
+                display: none;
+            }
+            ul {
+                list-style: none;
+                padding-left: 10%;
+                padding-right: 5%;
+                overflow: scroll;
+            }
+            c {
+                white-space: pre;
+                font: normal 16px univers-web;
+                color: #4CC37E;
+                display: inline-block;
+                width: 90px;
+            }
+            b {
+                padding-left: 10px;
+                font: normal 16px univers-web;
+                color: #d8d8d8;
+            }
+            e {
+                padding-left: 10px;
+                font: normal 16px univers-web;
+                color: #d8d8d8;
+                padding-bottom: 10px;
+            }
+            div.bodypart {
+                padding-top: 10px;
+                padding-bottom: 10px;
+                height: 100%;
+                width: 100%;
+                overflow: scroll;
+                font: normal 16px univers-web;
+                line-height: 180%;
+                color: #4CC37E;
+            }
+        }
 
-@media only screen and (min-width: 800px) and (max-width: 1100px) {
-	html,body {
-	background: #383052;
-	}
-	div.titlebar {
-	display:none;
-	}
-	ul {
-	list-style: none;
-	padding-left: 10%;
-	padding-right:5%;
-	overflow: scroll;
-	}
-	c {
-	white-space: pre;
-	font: normal 16px univers-web;
-	color:#4CC37E;
-	display: inline-block;
-	width: 90px;
-	}
-	b {
-	padding-left:10px;
-	font: normal 16px univers-web;
-	color:#d8d8d8;
-	}
-	e {
-	padding-left:10px;
-	font: normal 16px univers-web;
-	color:#d8d8d8;
-	padding-bottom:10px;
-	}
-	div.bodypart {
-	padding-top:10px;
-	padding-bottom:10px;
-	height:100%;
-	width:100%;
-	overflow: scroll;
-	font: normal 16px univers-web;
-	line-height:180%;
-	color:#4CC37E;
-	}
-}
+        @media only screen and (min-width: 1100px) and (max-width: 1500px) {
+            html,
+            body {
+                background-color: #E0DACF;
+            }
+            div.borderpart {
+                width: 80%;
+                height: 80%;
+                border-radius: 8px;
+                background: #383052;
+                margin: 50px auto;
+                box-shadow: 0px 0px 40px 10px rgba(128, 128, 128, 0.5);
+                min-height: 600px;
+                padding-bottom: 43px;
+            }
+            ul {
+                list-style: none;
+                padding-left: 10%;
+                padding-right: 5%;
+            }
+            c {
+                white-space: pre;
+                font: normal 16px univers-web;
+                color: #4CC37E;
+                display: inline-block;
+                width: 140px;
+            }
+            b {
+                padding-left: 10px;
+                font: normal 16px univers-web;
+                color: #d8d8d8;
+            }
+            div.bodypart {
+                height: 100%;
+                width: 100%;
+                overflow: scroll;
+                font: normal 16px univers-web;
+                line-height: 180%;
+                color: #4CC37E;
+            }
+            div.bottombar {
+                height: 23px;
+            }
+            @keyframes myfirst {
+                from {
+                    width: 0;
+                    height: 0;
+                }
+                to {
+                    width: 80%;
+                    height: 80%;
+                }
+            }
 
-@media only screen and (min-width: 1100px) and (max-width: 1500px) {
-	html,body {
-	background-color: #E0DACF;
-	}
-	div.borderpart {
-	width:80%;
-	height:80%;
-	border-radius: 8px;
-	background: #383052;
-	margin:50px auto;
-	box-shadow: 0px 0px 40px 10px rgba(128, 128, 128, 0.5);
-	min-height:600px;
-	padding-bottom:43px;
-	}
-	ul {
-	list-style: none;
-	padding-left: 10%;
-	padding-right:5%;
-	}
-	c {
-	white-space: pre;
-	font: normal 16px univers-web;
-	color:#4CC37E;
-	display: inline-block;
-	width: 140px;
-	}
-	b {
-	padding-left:10px;
-	font: normal 16px univers-web;
-	color:#d8d8d8;
-	}
-	div.bodypart {
-	height:100%;
-	width:100%;
-	overflow: scroll;
-	font: normal 16px univers-web;
-	line-height:180%;
-	color:#4CC37E;
-	}
-	div.bottombar{
-	height:23px;
-	}
-	@keyframes myfirst
-	{
-	from {width:0;height:0;}
-	to {width: 80%;height:80%;}
-	}
+            @-moz-keyframes myfirst/* Firefox */
+            {
+                from {
+                    width: 0;
+                    height: 0;
+                }
+                to {
+                    width: 80%;
+                    height: 80%;
+                }
+            }
 
-	@-moz-keyframes myfirst /* Firefox */
-	{
-	from {width:0;height:0;}
-	to {width: 80%;height:80%;}
-	}
+            @-webkit-keyframes myfirst/* Safari 和 Chrome */
+            {
+                from {
+                    width: 0;
+                    height: 0;
+                }
+                to {
+                    width: 80%;
+                    height: 80%;
+                }
+            }
 
-	@-webkit-keyframes myfirst /* Safari 和 Chrome */
-	{
-	from {width:0;height:0;}
-	to {width: 80%;height:80%;}
-	}
+            @-o-keyframes myfirst/* Opera */
+            {
+                from {
+                    width: 0;
+                    height: 0;
+                }
+                to {
+                    width: 80%;
+                    height: 80%;
+                }
+            }
+        }
 
-	@-o-keyframes myfirst /* Opera */
-	{
-	from {width:0;height:0;}
-	to {width: 80%;height:80%;}
-	}
-}
+        @media only screen and (min-width: 1501px) {
+            html,
+            body {
+                background-color: #E0DACF;
+            }
+            div.borderpart {
+                width: 60%;
+                height: 80%;
+                border-radius: 8px;
+                background: #383052;
+                margin: 50px auto;
+                box-shadow: 0px 0px 40px 10px rgba(128, 128, 128, 0.5);
+                min-height: 600px;
+                padding-bottom: 43px;
+            }
+            ul {
+                list-style: none;
+                padding-left: 10%;
+                padding-right: 10%;
+            }
+            c {
+                white-space: pre;
+                font: normal 16px univers-web;
+                color: #4CC37E;
+                display: inline-block;
+                width: 140px;
+            }
+            b {
+                padding-left: 10px;
+                font: normal 16px univers-web;
+                color: #d8d8d8;
+            }
+            div.bodypart {
+                height: 100%;
+                width: 100%;
+                overflow: scroll;
+                font: normal 16px univers-web;
+                line-height: 180%;
+                color: #4CC37E;
+            }
+            @keyframes myfirst {
+                from {
+                    width: 0;
+                    height: 0;
+                }
+                to {
+                    width: 60%;
+                    height: 80%;
+                }
+            }
 
-@media only screen and (min-width: 1501px) {
-	html,body {
-	background-color: #E0DACF;
-	}
-	div.borderpart {
-	width:60%;
-	height:80%;
-	border-radius: 8px;
-	background: #383052;
-	margin:50px auto;
-	box-shadow: 0px 0px 40px 10px rgba(128, 128, 128, 0.5);
-	min-height:600px;
-	padding-bottom:43px;
-	}
-	ul {
-	list-style: none;
-	padding-left: 10%;
-	padding-right:10%;
-	}
-	c {
-	white-space: pre;
-	font: normal 16px univers-web;
-	color:#4CC37E;
-	display: inline-block;
-	width: 140px;
-	}
-	b {
-	padding-left:10px;
-	font: normal 16px univers-web;
-	color:#d8d8d8;
-	}
-	div.bodypart {
-	height:100%;
-	width:100%;
-	overflow: scroll;
-	font: normal 16px univers-web;
-	line-height:180%;
-	color:#4CC37E;
-	}
-	@keyframes myfirst
-	{
-	from {width:0;height:0;}
-	to {width: 60%;height:80%;}
-	}
+            @-moz-keyframes myfirst/* Firefox */
+            {
+                from {
+                    width: 0;
+                    height: 0;
+                }
+                to {
+                    width: 60%;
+                    height: 80%;
+                }
+            }
 
-	@-moz-keyframes myfirst /* Firefox */
-	{
-	from {width:0;height:0;}
-	to {width: 60%;height:80%;}
-	}
+            @-webkit-keyframes myfirst/* Safari 和 Chrome */
+            {
+                from {
+                    width: 0;
+                    height: 0;
+                }
+                to {
+                    width: 60%;
+                    height: 80%;
+                }
+            }
 
-	@-webkit-keyframes myfirst /* Safari 和 Chrome */
-	{
-	from {width:0;height:0;}
-	to {width: 60%;height:80%;}
-	}
+            @-o-keyframes myfirst/* Opera */
+            {
+                from {
+                    width: 0;
+                    height: 0;
+                }
+                to {
+                    width: 60%;
+                    height: 80%;
+                }
+            }
+        }
 
-	@-o-keyframes myfirst /* Opera */
-	{
-	from {width:0;height:0;}
-	to {width: 60%;height:80%;}
-	}
-}
+        div.borderpart {
+            animation: myfirst 0.5s;
+            -moz-animation: myfirst 0.5s;
+            /* Firefox */
+            -webkit-animation: myfirst 0.5s;
+            /* Safari 和 Chrome */
+            -o-animation: myfirst 0.5s;
+        }
+        /* framepart */
 
-div.borderpart
-{
-animation: myfirst 0.5s;
--moz-animation: myfirst 0.5s;	/* Firefox */
--webkit-animation: myfirst 0.5s;	/* Safari 和 Chrome */
--o-animation: myfirst 0.5s;
-}
+        div.titlebar {
+            height: 23px;
+            background-color: #d8d8d8;
+            border-radius: 8px 8px 0 0;
+            margin-bottom: 10px;
+        }
 
+        div.trafficlightred {
+            width: 12px;
+            height: 12px;
+            background-color: #fb4647;
+            border-radius: 6px;
+            position: absolute;
+            z-index: 999;
+            margin: 6px 0 6px 10px;
+        }
 
-/* framepart */
-div.titlebar {
-	height:23px;
-	background-color: #d8d8d8;
-	border-radius: 8px 8px 0 0;
-	margin-bottom:10px;
-}
+        div.trafficlightyellow {
+            width: 12px;
+            height: 12px;
+            background-color: #FEC041;
+            border-radius: 6px;
+            position: absolute;
+            z-index: 999;
+            margin: 6px 0 6px 32px;
+        }
 
-div.trafficlightred {
-	width:12px;
-	height:12px;
-	background-color: #fb4647;
-	border-radius: 6px;
-	position:absolute;
-	z-index:999;
-	margin:6px 0 6px 10px;
-}
-
-div.trafficlightyellow {
-	width:12px;
-	height:12px;
-	background-color: #FEC041;
-	border-radius: 6px;
-	position:absolute;
-	z-index:999;
-	margin:6px 0 6px 32px;
-}
-
-div.trafficlightgreen {
-	width:12px;
-	height:12px;
-	background-color: #28c332;
-	border-radius: 6px;
-	position:absolute;
-	z-index:999;
-	margin:6px 0 6px 54px;
-}
-
-
-d {
-	white-space: pre;
-	font: normal 16px univers-web;
-	color:#FEC041;
-}
+        div.trafficlightgreen {
+            width: 12px;
+            height: 12px;
+            background-color: #28c332;
+            border-radius: 6px;
+            position: absolute;
+            z-index: 999;
+            margin: 6px 0 6px 54px;
+        }
 
 
-a:link {
-	font: normal 16px univers-web;
-	color: #6ea3ee;
-	text-decoration:none; 
-}
+        d {
+            white-space: pre;
+            font: normal 16px univers-web;
+            color: #FEC041;
+        }
 
-a:visited {
-	font: normal 16px univers-web;
-	color: #6ea3ee;
-	text-decoration:none; 
-}
 
-a:hover { 
-	font: normal 16px univers-web;
-    color: #6ea3ee;
-    -moz-animation: blink .75s linear infinite;
-	-ms-animation: blink .75s linear infinite;
-	-o-animation: blink .75s linear infinite;
-	animation: blink .75s linear infinite;
-}
+        a:link {
+            font: normal 16px univers-web;
+            color: #6ea3ee;
+            text-decoration: none;
+        }
 
-.typed-cursor {
-  font: normal 16px univers-web;
-  color: #FEC041;
-  -webkit-animation: 0.75s blink step-end infinite;
-  -moz-animation: 0.75s blink step-end infinite;
-  -ms-animation: 0.75s blink step-end infinite;
-  -o-animation: 0.75s blink step-end infinite;
-  animation: 0.75s blink step-end infinite;
-}
+        a:visited {
+            font: normal 16px univers-web;
+            color: #6ea3ee;
+            text-decoration: none;
+        }
 
-@keyframes "blink" {
-  from, to {
-    color: transparent;
-  }
-  50% {
-    color: #FEC041;
-  }
-}
+        a:hover {
+            font: normal 16px univers-web;
+            color: #6ea3ee;
+            -moz-animation: blink .75s linear infinite;
+            -ms-animation: blink .75s linear infinite;
+            -o-animation: blink .75s linear infinite;
+            animation: blink .75s linear infinite;
+        }
 
-@-moz-keyframes blink {
-  from, to {
-    color: transparent;
-  }
-  50% {
-    color: #FEC041;
-  }
-}
+        .typed-cursor {
+            font: normal 16px univers-web;
+            color: #FEC041;
+            -webkit-animation: 0.75s blink step-end infinite;
+            -moz-animation: 0.75s blink step-end infinite;
+            -ms-animation: 0.75s blink step-end infinite;
+            -o-animation: 0.75s blink step-end infinite;
+            animation: 0.75s blink step-end infinite;
+        }
 
-@-webkit-keyframes "blink" {
-  from, to {
-    color: transparent;
-  }
-  50% {
-    color: #FEC041;
-  }
-}
+        @keyframes "blink" {
+            from,
+            to {
+                color: transparent;
+            }
+            50% {
+                color: #FEC041;
+            }
+        }
 
-@-ms-keyframes "blink" {
-  from, to {
-    color: transparent;
-  }
-  50% {
-    color: #FEC041;
-  }
-}
+        @-moz-keyframes blink {
+            from,
+            to {
+                color: transparent;
+            }
+            50% {
+                color: #FEC041;
+            }
+        }
 
-@-o-keyframes "blink" {
-  from, to {
-    color: transparent;
-  }
-  50% {
-    color: #FEC041;
-  }
-}
-</style>
+        @-webkit-keyframes "blink" {
+            from,
+            to {
+                color: transparent;
+            }
+            50% {
+                color: #FEC041;
+            }
+        }
+
+        @-ms-keyframes "blink" {
+            from,
+            to {
+                color: transparent;
+            }
+            50% {
+                color: #FEC041;
+            }
+        }
+
+        @-o-keyframes "blink" {
+            from,
+            to {
+                color: transparent;
+            }
+            50% {
+                color: #FEC041;
+            }
+        }
+    </style>
 </head>
-	
+
 
 <body onselectstart="return false">
-<div class="borderpart">
-	<div class="titlebar">
-		<div class="trafficlightred">
-		</div>
-		<div class="trafficlightyellow">
-		</div>
-		<div class="trafficlightgreen">
-		</div>
-	</div>
-	<script>
-	var width = document.body.clientWidth
-	</script>
-<script>
-	<!-- 
-		if (width < 1100)
-		{document.write(unescape('%3C')+'!-'+'-')}
-	//--> 	
-</script>
-	<div id="border" class="bodypart">
- <script>
-	 <!-- 
-		if (width < 1100)
-		{document.write('-'+'-' + unescape('%3E'))}
-//--> 
-</script>
-		<b id="about1" style="visibility:hidden">about-me:~ mayuzumi$ </b><d id="element1" style="visibility:visible"></d><span id="cursor1" class="typed-cursor" style="visibility:hidden">_</span>
-		<ul id="info" style="visibility:hidden">
-			<li class="profile name">
-				<c># name</c>
-				<d>alick hwang</d>
-			</li>
-			<li class="profile wechat">
-				<c># wechat</c>
-				<d>sid08080826</d>
-			</li>
-			<li class="profile email">
-				<a href="mailto:minamike2007@gmail.com" target="_blank">
-					<c># email</c>
-					<span class="link">minamike2007@gmail.com</span>
-				</a>
-			</li>
-			<li class="profile wiki">
-				<a href="http://wiki.mayuzumi.me" target="_blank">
-					<c># wiki</c>
-					<span class="link">wiki.mayuzumi.me</span>
-				</a>
-			</li>
-			<li class="profile twitter">
-				<a href="https://twitter.com/minamike1989" target="_blank">
-					<c># twitter</c>
-					<span class="link">@ minamike1989</span>
-				</a>
-			</li>
-			<li class="profile github">
-				<a href="https://github.com/SIDmao" target="_blank">
-					<c># github</c>
-					<span class="link">@ SIDmao</span>
-				</a>
-			</li>
-			<li class="profile linkedin">
-				<a href="https://www.linkedin.com/in/alick-hwang/" target="_blank">
-					<c># linkedin</c>
-					<span class="link">@ alick-hwang</span>
-				</a>
-			</li>
-			<li class="profile instagram">
-				<a href="https://www.instagram.com/mayuzumimachiko/" target="_blank">
-					<c># instagram</c>
-					<span class="link">@ mayuzumimachiko</span>
-				</a>
-			</li>
-			<li class="profile deviantart">
-				<a href="http://minamike2007.deviantart.com" target="_blank">
-					<c># deviantart</c>
-					<span class="link">@ minamike2007</span>
-				</a>
-			</li>
-			<li class="profile douban">
-				<a href="https://www.douban.com/people/47371643/" target="_blank">
-					<c># douban</c>
-					<span class="link">@ minamike</span>
-				</a>
-			</li>
-			<li class="profile neteasemusic">
-				<a href="http://music.163.com/#/user/home?id=342390157" target="_blank">
-					<c># music163</c>
-					<span class="link">@ mayuzumichikako</span>
-				</a>
-			</li>
-			<li class="profile v2ex">
-				<a href="https://www.v2ex.com/member/minamike" target="_blank">
-					<c># v2ex</c>
-					<span class="link">@ minamike</span>
-				</a>
-			</li>
-		</ul>
-		<b id="about2" style="visibility:hidden">about-me:~ mayuzumi$ </b><d id="element2" style="visibility:visible"></d><span id="cursor2" class="typed-cursor" style="visibility:hidden">_</span>
-		<ul id="expe" style="visibility:hidden">
-			<li class="profile now">
-				<a href="http://www.zjgdjz.com" target="_blank">
-					<c># Now</c>
-					<span class="link">Construction Crew — Zhenjiang Guangda Construction Company </span>
-				</a>
-			</li>
-			<li class="profile 2015">
-				<a href="http://www.jxkcy.com" target="_blank">
-					<c># 2015</c>
-					<span class="link">Surveyor — Suzhou Branch of Jiangxi Prospecting and Design Institute</span>
-				</a>
-			</li>
-			<li class="profile 2014">
-				<a href="http://www.cscec83.com" target="_blank">
-					<c># 2014</c>
-					<span class="link">Document Keeper — China State Construction Engrg. Corp. LTD (CSCEC)</span>
-				</a>
-			</li>
-			<li class="profile 2011">
-				<a href="http://www.sepco3.com" target="_blank">
-					<c># 2011</c>
-					<span class="link">Construction Crew — SEPCOIII Shandong Electric Power Construction Corp.</span>
-				</a>
-			</li>
-		</ul>
-		<b id="about3" style="visibility:hidden">about-me:~ mayuzumi$ </b><d id="element3" style="visibility:visible"></d><span id="cursor3" class="typed-cursor" style="visibility:hidden">_</span>
-		<ul id="proj" style="visibility:hidden">
-			<li class="profile 2015">
-				<a href="http://www.czmetro.net.cn/Html/index.html" target="_blank">
-					<c># 2015</c>
-					<span class="link">Changzhou Metro Line NO.1 Construction Project</span>
-				</a>
-			</li>
-			<li class="profile 2014">
-				<a href="http://www.wanda-cti.com/project/wuxi/" target="_blank">
-					<c># 2014</c>
-					<span class="link">Wuxi Wanda Cultural Tourism City Project</span>
-				</a>
-			</li>
-			<li class="profile 2011">
-				<a href="http://www.gdxjkc.com" target="_blank">
-					<c># 2011</c>
-					<span class="link">Expansion Project of Kuqa Power Generation Co. LTD of SGCC</span>
-				</a>
-			</li>
-		</ul>
-		<b id="about4" style="visibility:hidden">about-me:~ mayuzumi$ </b><d id="element4" style="visibility:visible"></d><span id="cursor4" class="typed-cursor" style="visibility:hidden">_</span>
-		<ul id="educ" style="visibility:hidden">
-			<li class="profile 2007">
-				<a href="http://www.ujs.edu.cn/site1/" target="_blank">
-					<c># 2007</c>
-					<span class="link">Civil Engineering — JiangSu University</span>
-				</a>
-			</li>
-		</ul>
-		<b id="about5" style="visibility:hidden">about-me:~ mayuzumi$ </b><d id="element5" style="visibility:visible"></d><span id="cursor5" class="typed-cursor" style="visibility:hidden">_</span>
-		<a href="https://github.com/SIDmao/homepage" id="forklink"></a>
-		<br />
-		<ul><c id="OK"></c></ul>
-	</div>
-	<div class="bottombar">
-	</div>
-</div>
-<script>
-function showText(id,delay){
-var elem=document.getElementById(id);
-setTimeout(function(){elem.style.visibility='visible';},delay)
-}
-function hideText(id,delay){
-var elem=document.getElementById(id);
-setTimeout(function(){elem.style.visibility='hidden';},delay)
-}
-function printText(test,id,delay){
-	var str = test,
-    i = 0,
-    isTag,
-    text;
-	setTimeout(function type() {
-    text = str.slice(0, ++i);
-    if (text === str) return;
-    document.getElementById(id).innerHTML = text;
-    var char = text.slice(-1);
-    if( char === '<' ) isTag = true;
-    if( char === '>' ) isTag = false;
-    if (isTag) return type();
-    setTimeout(type, 50);
-},delay)
-}
-window.onload=function(){
-showText('about1',500);
-showText('cursor1',500);
-hideText('cursor1',1950);
-showText('info',2000);
-showText('about2',2100);
-showText('cursor2',2100);
-hideText('cursor2',3150);
-showText('expe',3200);
-showText('about3',3300);
-showText('cursor3',3300);
-hideText('cursor3',4350);
-showText('proj',4400);
-showText('about4',4500);
-showText('cursor4',4500);
-hideText('cursor4',5550);
-showText('educ',5600);
-showText('about5',5700);
-showText('cursor5',5700);
-printText('cat <f style="font-weight:bold;">INFORMATION</f>','element1',1000);
-printText('cat <f style="font-weight:bold;">EXPERIENCE</f>','element2',2200);
-printText('cat <f style="font-weight:bold;">PROJECT</f>','element3',3400);
-printText('cat <f style="font-weight:bold;">EDUCATION</f>','element4',4600);
-printText('<f style="font-weight:bold;">Press "ENTER" button to Fork me on GitHub</f>','element5',5800);
-}
-</script>
-<script>
-setTimeout(function(){ 
-document.onkeydown = function(e){
-var ev=document.all?window.event:e;
-if(ev.keyCode==13){
-document.getElementById('cursor5').style.visibility='hidden';
-document.getElementById("OK").innerHTML = "OK! Now you can fork this theme and modify it!";
-setTimeout(function(){open($("#forklink").attr("href"))},1000);
-} 
-} 
-},6800); 
-</script>				
+    <div class="borderpart">
+        <div class="titlebar">
+            <div class="trafficlightred">
+            </div>
+            <div class="trafficlightyellow">
+            </div>
+            <div class="trafficlightgreen">
+            </div>
+        </div>
+        <script>
+            var width = document.body.clientWidth
+        </script>
+        <script>
+            <!--
+            if (width < 1100) {
+                document.write(unescape('%3C') + '!-' + '-')
+            }
+            //-->
+        </script>
+        <div id="border" class="bodypart">
+            <script>
+                <!--
+                if (width < 1100) {
+                    document.write('-' + '-' + unescape('%3E'))
+                }
+                //-->
+            </script>
+            <b id="about1" style="visibility:hidden">about-me:~ mayuzumi$ </b>
+            <d id="element1" style="visibility:visible"></d><span id="cursor1" class="typed-cursor" style="visibility:hidden">_</span>
+            <ul id="info" style="visibility:hidden">
+                <li class="profile name">
+                    <c># name</c>
+                    <d>alick hwang</d>
+                </li>
+                <li class="profile wechat">
+                    <c># wechat</c>
+                    <d>sid08080826</d>
+                </li>
+                <li class="profile email">
+                    <a href="mailto:minamike2007@gmail.com" target="_blank">
+                        <c># email</c>
+                        <span class="link">minamike2007@gmail.com</span>
+                    </a>
+                </li>
+                <li class="profile wiki">
+                    <a href="http://wiki.mayuzumi.me" target="_blank">
+                        <c># wiki</c>
+                        <span class="link">wiki.mayuzumi.me</span>
+                    </a>
+                </li>
+                <li class="profile twitter">
+                    <a href="https://twitter.com/minamike1989" target="_blank">
+                        <c># twitter</c>
+                        <span class="link">@ minamike1989</span>
+                    </a>
+                </li>
+                <li class="profile github">
+                    <a href="https://github.com/SIDmao" target="_blank">
+                        <c># github</c>
+                        <span class="link">@ SIDmao</span>
+                    </a>
+                </li>
+                <li class="profile linkedin">
+                    <a href="https://www.linkedin.com/in/alick-hwang/" target="_blank">
+                        <c># linkedin</c>
+                        <span class="link">@ alick-hwang</span>
+                    </a>
+                </li>
+                <li class="profile instagram">
+                    <a href="https://www.instagram.com/mayuzumimachiko/" target="_blank">
+                        <c># instagram</c>
+                        <span class="link">@ mayuzumimachiko</span>
+                    </a>
+                </li>
+                <li class="profile deviantart">
+                    <a href="http://minamike2007.deviantart.com" target="_blank">
+                        <c># deviantart</c>
+                        <span class="link">@ minamike2007</span>
+                    </a>
+                </li>
+                <li class="profile douban">
+                    <a href="https://www.douban.com/people/47371643/" target="_blank">
+                        <c># douban</c>
+                        <span class="link">@ minamike</span>
+                    </a>
+                </li>
+                <li class="profile neteasemusic">
+                    <a href="http://music.163.com/#/user/home?id=342390157" target="_blank">
+                        <c># music163</c>
+                        <span class="link">@ mayuzumichikako</span>
+                    </a>
+                </li>
+                <li class="profile v2ex">
+                    <a href="https://www.v2ex.com/member/minamike" target="_blank">
+                        <c># v2ex</c>
+                        <span class="link">@ minamike</span>
+                    </a>
+                </li>
+            </ul>
+            <b id="about2" style="visibility:hidden">about-me:~ mayuzumi$ </b>
+            <d id="element2" style="visibility:visible"></d><span id="cursor2" class="typed-cursor" style="visibility:hidden">_</span>
+            <ul id="expe" style="visibility:hidden">
+                <li class="profile now">
+                    <a href="http://www.zjgdjz.com" target="_blank">
+                        <c># Now</c>
+                        <span class="link">Construction Crew — Zhenjiang Guangda Construction Company </span>
+                    </a>
+                </li>
+                <li class="profile 2015">
+                    <a href="http://www.jxkcy.com" target="_blank">
+                        <c># 2015</c>
+                        <span class="link">Surveyor — Suzhou Branch of Jiangxi Prospecting and Design Institute</span>
+                    </a>
+                </li>
+                <li class="profile 2014">
+                    <a href="http://www.cscec83.com" target="_blank">
+                        <c># 2014</c>
+                        <span class="link">Document Keeper — China State Construction Engrg. Corp. LTD (CSCEC)</span>
+                    </a>
+                </li>
+                <li class="profile 2011">
+                    <a href="http://www.sepco3.com" target="_blank">
+                        <c># 2011</c>
+                        <span class="link">Construction Crew — SEPCOIII Shandong Electric Power Construction Corp.</span>
+                    </a>
+                </li>
+            </ul>
+            <b id="about3" style="visibility:hidden">about-me:~ mayuzumi$ </b>
+            <d id="element3" style="visibility:visible"></d><span id="cursor3" class="typed-cursor" style="visibility:hidden">_</span>
+            <ul id="proj" style="visibility:hidden">
+                <li class="profile 2015">
+                    <a href="http://www.czmetro.net.cn/Html/index.html" target="_blank">
+                        <c># 2015</c>
+                        <span class="link">Changzhou Metro Line NO.1 Construction Project</span>
+                    </a>
+                </li>
+                <li class="profile 2014">
+                    <a href="http://www.wanda-cti.com/project/wuxi/" target="_blank">
+                        <c># 2014</c>
+                        <span class="link">Wuxi Wanda Cultural Tourism City Project</span>
+                    </a>
+                </li>
+                <li class="profile 2011">
+                    <a href="http://www.gdxjkc.com" target="_blank">
+                        <c># 2011</c>
+                        <span class="link">Expansion Project of Kuqa Power Generation Co. LTD of SGCC</span>
+                    </a>
+                </li>
+            </ul>
+            <b id="about4" style="visibility:hidden">about-me:~ mayuzumi$ </b>
+            <d id="element4" style="visibility:visible"></d><span id="cursor4" class="typed-cursor" style="visibility:hidden">_</span>
+            <ul id="educ" style="visibility:hidden">
+                <li class="profile 2007">
+                    <a href="http://www.ujs.edu.cn/site1/" target="_blank">
+                        <c># 2007</c>
+                        <span class="link">Civil Engineering — JiangSu University</span>
+                    </a>
+                </li>
+            </ul>
+            <b id="about5" style="visibility:hidden">about-me:~ mayuzumi$ </b>
+            <d id="element5" style="visibility:visible"></d><span id="cursor5" class="typed-cursor" style="visibility:hidden">_</span>
+            <a href="https://github.com/SIDmao/homepage" id="forklink"></a>
+            <br />
+            <ul>
+                <c id="OK"></c>
+            </ul>
+        </div>
+        <div class="bottombar">
+        </div>
+    </div>
+    <script>
+        function showText(id, delay) {
+            var elem = document.getElementById(id);
+            setTimeout(function() {
+                elem.style.visibility = 'visible';
+            }, delay)
+        }
+
+        function hideText(id, delay) {
+            var elem = document.getElementById(id);
+            var myAudio = new Audio('key.mp3');
+            setTimeout(function() {
+                myAudio.play();
+                elem.style.visibility = 'hidden';
+            }, delay)
+        }
+
+        function printText(key, test, id, delay) {
+            var str = test,
+                i = 0,
+                isTag,
+                text;
+            setTimeout(function type() {
+                text = str.slice(0, ++i);
+                if (text === str) return;
+                document.getElementById(id).innerHTML = text;
+                var char = text.slice(-1);
+                if (char === '<') isTag = true;
+                if (char === '>') isTag = false;
+                if (isTag) return type();
+                setTimeout(type, 100);
+            }, delay);
+
+        }
+
+        window.onload = function() {
+            showText('about1', 500);
+            showText('cursor1', 500);
+            hideText('cursor1', 3000);
+            showText('info', 3100);
+            showText('about2', 3200);
+            showText('cursor2', 3200);
+            hideText('cursor2', 5700);
+            showText('expe', 5800);
+            showText('about3', 5900);
+            showText('cursor3', 5900);
+            hideText('cursor3', 8400);
+            showText('proj', 8500);
+            showText('about4', 8600);
+            showText('cursor4', 9200);
+            hideText('cursor4', 11200);
+            showText('educ', 11200);
+            showText('about5', 11300);
+            showText('cursor5', 11800);
+            printText('key.mp3', 'cat INFORMATION ', 'element1', 1000);
+            printText('key.mp3', 'cat EXPERIENCE ', 'element2', 3700);
+            printText('key.mp3', 'cat PROJECT ', 'element3', 6400);
+            printText('key.mp3', 'cat EDUCATION ', 'element4', 9100);
+            printText('key.mp3', 'Press "ENTER" button to Fork me on GitHub ', 'element5', 11800);
+        }
+    </script>
+    <script>
+        setTimeout(function() {
+            document.onkeydown = function(e) {
+                var ev = document.all ? window.event : e;
+                var myAudio = new Audio('key.mp3');
+                if (ev.keyCode == 13) {
+                    myAudio.play();
+                    document.getElementById('cursor5').style.visibility = 'hidden';
+                    document.getElementById("OK").innerHTML = "OK! Now you can fork this theme and modify it!";
+                    setTimeout(function() {
+                        open($("#forklink").attr("href"))
+                    }, 1000);
+                }
+            }
+        }, 6800);
+    </script>
 </body>
+
 </html>
