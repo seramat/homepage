@@ -429,6 +429,11 @@
             }
         }
 
+        ul {
+            padding-bottom: 10px;
+            padding-top: 10px;
+        }
+
         .bubble-btm {
             bottom: 0;
             left: 0;
@@ -916,10 +921,6 @@
     </script>
     <script>
         setTimeout(function() {
-            myAudio = new Audio('bubble.wav');
-            setInterval(function() {
-                myAudio.play()
-            }, 4000);
             document.onkeydown = function(e) {
                 var ev = document.all ? window.event : e;
                 var myAudio = new Audio('bubble.wav');
